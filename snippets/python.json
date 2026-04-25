@@ -1,0 +1,39 @@
+{
+    "main": {
+        "prefix": "main",
+        "body": [
+            "def main() -> None:",
+            "    ...$1\n\n",
+            "if __name__ == '__main__':",
+            "    main()\n"
+        ],
+        "description": "Main function definition"
+    },
+    "author": {
+        "prefix": "author",
+        "body": [
+            "'''",
+            "    Author: $1",
+            "    Date: $2",
+            "    Description: $3",
+            "'''"
+        ],
+        "description": "Author comment on top of file"
+    },
+    "function docstring": {
+        "prefix": "def",
+        "body": [
+            "def ${1:...}($2) -> ${3:...}:",
+            "    '''",
+            "    $4",
+            "",
+            "    Args:",
+            "        $5",
+            "",
+            "    Returns:",
+            "        $6",
+            "",
+            "    ...$7"
+        ]
+    }
+}
