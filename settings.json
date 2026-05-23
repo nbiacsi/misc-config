@@ -11,9 +11,10 @@
         "default_profile": "ask",
         "default_model": {
             "provider": "lmstudio",
-            "model": "qwen3.5-9b-python-coder"
+            "model": "qwen3.5-9b-python-coder",
         },
-        "model_parameters": []
+        "model_parameters": [],
+        "dock": "right",
     },
     "show_whitespaces": "boundary",
     "tab_size": 4,
@@ -22,12 +23,12 @@
     "format_on_save": "on",
     "telemetry": {
         "diagnostics": false,
-        "metrics": false
+        "metrics": false,
     },
     "icon_theme": "Material Icon Theme",
     "vim_mode": true,
     "minimap": {
-        "show": "auto"
+        "show": "auto",
     },
     "base_keymap": "VSCode",
     "ui_font_size": 16,
@@ -35,27 +36,27 @@
     "theme": {
         "mode": "dark",
         "light": "One Light",
-        "dark": "GitHub Dark"
+        "dark": "GitHub Dark",
     },
     "inlay_hints": {
         "show_other_hints": false,
         "show_parameter_hints": false,
         "show_type_hints": false,
-        "show_value_hints": true
+        "show_value_hints": true,
     },
     "lsp_document_colors": "border",
     "restore_on_startup": "last_workspace",
     "show_completions_on_input": true,
     "git": {
-        "inline_blame": { "enabled": false }
+        "inline_blame": { "enabled": false },
     },
     "relative_line_numbers": "enabled",
     "languages": {
         "Python": {
             "formatter": {
-                "language_server": { "name": "ruff" }
-            }
-        }
+                "language_server": { "name": "ruff" },
+            },
+        },
     },
     "lsp": {
         "ruff": {
@@ -63,10 +64,22 @@
                 "settings": {
                     "lineLength": 79,
                     "lint": {
-                        "extendSelect": ["I"]
-                    }
-                }
-            }
-        }
-    }
+                        "extendSelect": ["I"],
+                    },
+                },
+            },
+        },
+    },
+    "project_panel": {
+        "dock": "left",
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "git_panel": {
+        "dock": "left",
+    },
 }
